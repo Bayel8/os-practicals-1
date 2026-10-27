@@ -1,0 +1,5 @@
+2026-02-14 10:31:02 ERROR module=net msg=Connection failed
+2026-02-14 10:32:10 WARN module=database msg=Slow query
+2026-02-14 10:33:15 ERROR module=api msg=Server error
+2026-02-14 10:34:20 ERROR module=net msg=Timeout
+2026-02-14 10:35:25 WARN module=api msg=Slow response

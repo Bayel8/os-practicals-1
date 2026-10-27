@@ -1,0 +1,124 @@
+14394 execve("/usr/bin/cat", ["cat", "data/01.log"], 0x7fff8caaf0f0 /* 27 vars */) = 0
+14394 brk(NULL)                         = 0x5c5a855a2000
+14394 arch_prctl(0x3001 /* ARCH_??? */, 0x7fff61abe000) = -1 EINVAL (Invalid argument)
+14394 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7bdbce624000
+14394 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21380, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 21380, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce61e000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+14394 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+14394 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+14394 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+14394 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0jl\265\250\17\325\345\273[\363\256\252\21\32\335\230"..., 68, 896) = 68
+14394 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+14394 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+14394 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7bdbce200000
+14394 mprotect(0x7bdbce228000, 2023424, PROT_NONE) = 0
+14394 mmap(0x7bdbce228000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7bdbce228000
+14394 mmap(0x7bdbce3bd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7bdbce3bd000
+14394 mmap(0x7bdbce416000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7bdbce416000
+14394 mmap(0x7bdbce41c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7bdbce41c000
+14394 close(3)                          = 0
+14394 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7bdbce61b000
+14394 arch_prctl(ARCH_SET_FS, 0x7bdbce61b740) = 0
+14394 set_tid_address(0x7bdbce61ba10)   = 14394
+14394 set_robust_list(0x7bdbce61ba20, 24) = 0
+14394 rseq(0x7bdbce61c0e0, 0x20, 0, 0x53053053) = 0
+14394 mprotect(0x7bdbce416000, 16384, PROT_READ) = 0
+14394 mprotect(0x5c5a733b1000, 4096, PROT_READ) = 0
+14394 mprotect(0x7bdbce666000, 8192, PROT_READ) = 0
+14394 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+14394 munmap(0x7bdbce61e000, 21380)     = 0
+14394 getrandom("\x5f\xb0\x5b\xe8\x2d\x86\x10\xe9", 8, GRND_NONBLOCK) = 8
+14394 brk(NULL)                         = 0x5c5a855a2000
+14394 brk(0x5c5a855c3000)               = 0x5c5a855c3000
+14394 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+14394 read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+14394 read(3, "", 4096)                 = 0
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=258, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 258, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce665000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7bdbce614000
+14394 close(3)                          = 0
+14394 futex(0x7bdbce41ba6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce623000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 47, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce622000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=127, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 127, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce621000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=62, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 62, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce620000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce61f000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 48, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce61e000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=270, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 270, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce613000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1406, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 1406, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce612000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3360, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 3360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce611000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=50, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 50, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce610000
+14394 close(3)                          = 0
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+14394 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=353616, ...}, AT_EMPTY_PATH) = 0
+14394 mmap(NULL, 353616, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7bdbce5b9000
+14394 close(3)                          = 0
+14394 newfstatat(1, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
+14394 openat(AT_FDCWD, "data/01.log", O_RDONLY) = 3
+14394 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=272, ...}, AT_EMPTY_PATH) = 0
+14394 fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+14394 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7bdbce597000
+14394 read(3, "2026-02-14 10:31:02 ERROR module"..., 131072) = 272
+14394 write(1, "2026-02-14 10:31:02 ERROR module"..., 272) = 272
+14394 read(3, "", 131072)               = 0
+14394 munmap(0x7bdbce597000, 139264)    = 0
+14394 close(3)                          = 0
+14394 close(1)                          = 0
+14394 close(2)                          = 0
+14394 exit_group(0)                     = ?
+14394 +++ exited with 0 +++
