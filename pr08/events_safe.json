@@ -1,0 +1,5 @@
+[
+  {"event": "acquire", "pid": "P0", "resource": "A"},
+  {"event": "acquire", "pid": "P1", "resource": "B"},
+  {"event": "wait", "pid": "P0", "resource": "B"}
+]
